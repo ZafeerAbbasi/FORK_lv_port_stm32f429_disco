@@ -14,6 +14,7 @@
 
 #include "lvgl/lvgl.h"
 #include "lvgl/examples/lv_examples.h"
+#include "../lv_demos/lv_demo.h"
 
 #include "hal_stm_lvgl/tft/tft.h"
 #include "hal_stm_lvgl/touchpad/touchpad.h"
@@ -29,12 +30,12 @@ int main(void)
 	SystemClock_Config();
 
 	/*Start up indication*/
-	BSP_LED_Init(LED3);
-	uint32_t i;
-	for (i = 0; i < 8; i++) {
-		BSP_LED_Toggle(LED3);
-		HAL_Delay(50);
-	}
+//	BSP_LED_Init(LED3);
+//	uint32_t i;
+//	for (i = 0; i < 8; i++) {
+//		BSP_LED_Toggle(LED3);
+//		HAL_Delay(50);
+//	}
 
 	lv_init();
 

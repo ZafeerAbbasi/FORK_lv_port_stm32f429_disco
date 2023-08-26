@@ -139,7 +139,7 @@ static bool touchpad_get_xy(int16_t *x, int16_t *y)
 
 	/* Update the X and Y position */
 	*x = _x;
-	*y = _y;
+	*y = 305 - _y;
 
 	return true;
 }
